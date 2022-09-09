@@ -45,9 +45,11 @@ void callbackDispatcher() {
         print("$simpleDelayedTask was executed");
         break;
       case simplePeriodicTask:
+        activeUser.rank++;
         print("$simplePeriodicTask was executed");
         break;
       case simplePeriodic1HourTask:
+        activeUser.rank++;
         print("$simplePeriodic1HourTask was executed");
         break;
       case Workmanager.iOSBackgroundTask:
